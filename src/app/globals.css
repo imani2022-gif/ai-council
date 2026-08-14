@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #14161c;
+  --bg-panel: #1b1e27;
+  --bg-panel-raised: #21242f;
+  --hairline: #2b2e3a;
+  --text-primary: #ece9e2;
+  --text-muted: #8a8d99;
+  --text-faint: #5b5e6b;
+
+  --advocate: #5aa896;
+  --advocate-dim: #2c3b39;
+  --critic: #c3695a;
+  --critic-dim: #3a2c2a;
+  --synthesis: #9599b3;
+  --synthesis-dim: #2c2e3a;
+  --verdict: #d4ab68;
+  --verdict-dim: #3a3226;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--verdict);
+  outline-offset: 3px;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stage-enter {
+  animation: fadeSlideIn 0.55s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.pulse-dot {
+  animation: pulseDot 1.4s ease-in-out infinite;
+}
