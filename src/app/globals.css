@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #14161c;
-  --bg-panel: #1b1e27;
-  --bg-panel-raised: #21242f;
-  --hairline: #2b2e3a;
-  --text-primary: #ece9e2;
-  --text-muted: #8a8d99;
-  --text-faint: #5b5e6b;
+  --bg: #ffffff;
+  --bg-panel: #f4f8f5;
+  --bg-panel-raised: #eaf3ee;
+  --hairline: #d8e6dd;
+  --text-primary: #14231a;
+  --text-muted: #56685d;
+  --text-faint: #8ea092;
 
-  --advocate: #5aa896;
-  --advocate-dim: #2c3b39;
-  --critic: #c3695a;
-  --critic-dim: #3a2c2a;
-  --synthesis: #9599b3;
-  --synthesis-dim: #2c2e3a;
-  --verdict: #d4ab68;
-  --verdict-dim: #3a3226;
+  --advocate: #1f7a4d;
+  --advocate-dim: #e1f2e8;
+  --critic: #4d6b58;
+  --critic-dim: #e9f1ec;
+  --synthesis: #2f6b46;
+  --synthesis-dim: #e3f2e9;
+  --verdict: #145c37;
+  --verdict-dim: #dcf0e4;
 
   --font-display: "Fraunces", serif;
   --font-body: "Inter", sans-serif;
