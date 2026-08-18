@@ -3,7 +3,7 @@
 // endpoint, so no extra SDK dependency is needed.
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
-export const MODEL = "llama-3.3-70b-versatile";
+export const MODEL = "openai/gpt-oss-120b";
 
 export async function callGroq(system: string, user: string, maxTokens: number) {
   const apiKey = process.env.GROQ_API_KEY;
